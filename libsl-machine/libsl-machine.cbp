@@ -34,6 +34,18 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="sg150-dbg">
+				<Option output="bin/sg150-dbg/sl-machine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/sg150-dbg/" />
+				<Option type="3" />
+				<Option compiler="sg150_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fPIC" />
+				</Compiler>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
